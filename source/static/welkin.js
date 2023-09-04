@@ -9,10 +9,15 @@ window.addEventListener("DOMContentLoaded", function() {
 // 上下滚动页面header-top动画
 window.onscroll = function() {scrollFunction()};
 function scrollFunction () {
-    // if (document.getElementsByClassName("posts-container"[0].scrollTop > -120)) {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 280) {
         document.getElementsByClassName("header-top")[0].classList.add("header-full");
     } else {
         document.getElementsByClassName("header-top")[0].classList.remove("header-full");
     }
+}
+
+// 删除页码
+var page_numbers = document.getElementsByClassName("page-number");
+for (i = page_numbers.length - 1; i >= 0; i--) {
+    page_numbers[i].parentNode.removeChild(page_numbers[i]);
 }
