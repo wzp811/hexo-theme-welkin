@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body class="transition-none">
+    <%- partial("_partial/head") %>
+        <%- partial("_partial/header-top") %>
+        <div main-container>
+            <%- partial("_partial/header") %>
+            <%- body %>
+            <%- partial("_partial/footer") %>
+        </div>
+    </body>
+    
+    <%- css("static/header.css") %>
+    <%- css("static/welkin.css") %>
+    <%- css("static/global.css") %>
+    <%- js("static/welkin.js") %>
+</html>

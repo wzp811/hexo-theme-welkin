@@ -1,0 +1,28 @@
+<main>
+    <section class="home-posts">
+        <% page.posts.each((post, i) => { %>
+            <div class="post-item">
+                <a href="<%- post.link ? post.link : url_for(post.path) %>">
+                    <h2 class="post-title">
+                        <%= post.title %>
+                    </h2>
+                </a>
+                <div class="post-info">
+                    <time class="date">
+                        <%= date(post.date, "YYYY.MM.DD") %>
+                    </time>
+                </div>
+            </div>
+        <% }) %>
+    </section>
+    <% if (page.total > 1) { %>
+        <nav class="pager">
+            <% var prev_text = "&lt; &nbsp; PREV"; var next_text = "NEXT &nbsp; &gt;" %>
+            <%- paginator({
+                prev_text: prev_text,
+                next_text: next_text,
+                escape: false
+            }) %>
+        </nav>
+    <% } %>
+</main>

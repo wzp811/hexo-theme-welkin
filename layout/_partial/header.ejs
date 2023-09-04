@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="header-main">
+        <a class="header-avatar" href="/">
+            <img class="avatar" src="<%= theme.avatar %>" alt="<%= theme.author %>">
+        </a>
+        <a class="header-title" href="/">
+            <%= config.title %>
+        </a>
+    </div>
+    <nav class="header-menu">
+        <% for (var i in theme.menu) { %>
+            <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        <% } %>
+    </nav>
+</header>

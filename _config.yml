@@ -1,0 +1,208 @@
+# author: 'Zachary' # 作者名称
+# avatar: '/static/img/avatar.jpg'
+# favicon: '/static/img/avatar.jpg'
+# menu: # 页眉菜单项目
+#   categories: /categories
+#   tags: /tags
+#   about: /about
+#   archives: /archives
+# config:
+#   copyright: true # 复制的时候弹出保留原站链接说明
+#   night: true # 自动切换夜间模式
+
+
+# main menu navigation
+menu:
+  categories: /categories
+  tags: /tags
+  about: /about
+  archives: /archives
+  search: /search
+
+banner: "/images/banner.jpg" # themes/reimu/source/images/banner.jpg
+# You can also write it in the form of the following url
+# banner: "https://example.com"
+favicon: "/images/favicon.ico" # themes/reimu/source/images/favicon.ico
+# You can also write it in the form of the following url
+# favicon: "https://example.com"
+avatar: '/static/img/avatar.jpg' # source/_data/avatar/avatar.jpg
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# rss
+# need https://github.com/hexojs/hexo-generator-feed
+rss: atom.xml
+
+# analytics
+baidu_analytics: false
+google_analytics: false
+gauges_analytics: false
+
+# Footer
+copyright:
+# Need help choosing? Please see...
+# https://creativecommons.org/choose/
+# https://choosealicense.com/
+# You can use html like below...
+# copyright: |-
+#   <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></br>
+#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></br>
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+#- tag
+- tagcloud
+- archive
+#- recent_posts
+
+# Widget behavior
+archive_type: 'monthly'
+show_count: false
+recent_posts_limits: 5
+
+social:
+  github: https://github.com/yourname
+  google: https://plus.google.com/yourname
+  twitter: https://twitter.com/yourname
+  facebook: https://www.facebook.com/yourname
+
+footer:
+  since: 2020 # 2020-current_year
+  powered: true
+  count: true
+  busuanzi: true
+
+# need https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus
+# use katex
+math:
+  enable: false
+
+# need https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: false  # default true
+
+# valine comment system. https://valine.js.org
+# version 1.5.1
+# notify and verify have been deprecated
+valine:
+  enable: false # if you want to use valine,please set this value is true
+  appId:  # leancloud application app id
+  appKey:  # leancloud application app key
+  pageSize: 10 # comment list page size
+  avatar: mp # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header info
+  recordIP: true # whether to record the IP address of the commenters
+  highlight: true # whether to highlight the code blocks
+
+# https://waline.js.org/
+waline:
+  enable: false
+  serverURL: 
+  lang: zh-CN
+  locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
+  emoji:
+    - https://unpkg.com/@waline/emojis@1.0.1/weibo
+    - https://unpkg.com/@waline/emojis@1.0.1/alus
+    - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+    - https://unpkg.com/@waline/emojis@1.0.1/qq
+    - https://unpkg.com/@waline/emojis@1.0.1/tieba
+    - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+  meta: 
+    - nick
+    - mail
+    - link
+  requiredMeta:
+    - nick
+    - mail
+  wordLimit: 0
+  pageSize: 10
+
+# https://twikoo.js.org
+twikoo:
+  enable: false
+  envId:  # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  region: 
+
+# https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+gitalk:
+  enable: false
+  clientID:
+  clientSecret:
+  repo:
+  owner:
+  admin:
+
+# https://giscus.app/zh-CN
+giscus:
+  enable: false
+  repo:
+  repoId:
+  category:
+  categoryId:
+  mapping: mapping
+  strict: 0
+  reactionsEnabled: 1
+  emitMetadata: 0
+  inputPosition: bottom
+  commentTheme: preferred_color_scheme
+  lang: zh-CN
+
+# need https://github.com/thom4parisot/hexo-algolia
+# please add the following config in your _config.yml
+# algolia:
+#   applicationID: 'your applicationID'
+#   apiKey: 'your apiKey'
+#   adminApiKey: 'your adminApiKey'
+#   indexName: 'your indexName'
+#   chunkSize: 5000
+algolia_search:
+  enable: false
+  hits:
+    per_page: 100
+  labels:
+    input_placeholder: "搜索....."
+    hits_empty: "未发现与 「${query}」相关内容"
+    hits_stats: "找到${hits}条结果（用时 ${time} ms）"
+
+# Dependent cdn links
+vendor:
+  js:
+    jquery: https://unpkg.com/jquery@3.7.0/dist/jquery.min.js
+    clipboard: https://unpkg.com/clipboard@2.0.11/dist/clipboard.min.js
+    lazysizes: https://unpkg.com/lazysizes@5.3.2/lazysizes.min.js
+    fancybox: https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
+    valine: https://unpkg.com/valine@1.5.1/dist/Valine.min.js
+    waline: https://unpkg.com/@waline/client@v2/dist/waline.mjs
+    twikoo: https://unpkg.com/twikoo@1.6.16/dist/twikoo.all.min.js
+    gitalk: https://unpkg.com/gitalk/dist/gitalk.min.js
+    busuanzi: https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js
+    algolia: https://unpkg.com/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js
+    instantsearch: https://unpkg.com/instantsearch.js@4.56.1/dist/instantsearch.production.min.js
+    pace: https://unpkg.com/pace-js@1.2.4/pace.min.js
+    mermaid: https://unpkg.com/mermaid@9.4.3/dist/mermaid.min.js
+    wow: https://unpkg.com/wowjs@1.1.3/dist/wow.min.js
+  css:
+    highlight: https://unpkg.com/typeface-source-code-pro@1.1.13/index.css
+    fancybox: https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
+    katex: https://unpkg.com/katex@0.16.7/dist/katex.min.css
+    waline: https://unpkg.com/@waline/client@v2/dist/waline.css
+    gitalk: https://unpkg.com/gitalk/dist/gitalk.css
+    fontawesome: https://unpkg.com/@fortawesome/fontawesome-free/css/v4-font-face.min.css
+    animate: https://unpkg.com/wowjs@1.1.3/css/libs/animate.css
+
+preloader:
+  enable: true
+  text: 少女祈祷中...
+  # text: Loading...
+
+animation:
+  enable: true
+
+dark_mode:
+  enable: false

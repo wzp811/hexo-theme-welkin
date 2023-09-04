@@ -1,0 +1,61 @@
+.home-posts {
+    max-width: 800px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-posts .post-item {
+    width: 100%;
+    text-align: center;
+}
+
+.home-posts .post-title {
+    padding: 24px 0 12px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    line-height: 1.42;
+}
+
+.home-posts .post-info {
+    color: #5E5E5E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    letter-spacing: 0.05em;
+    padding-bottom: 24px;
+}
+
+.pager {
+    max-width: 800px;
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace, "Courier New", Courier;
+    font-size: 16px;
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
+.pager .prev {
+    float: left;
+    left: 100px;
+    transition: 0.3s transform;
+}
+.pager .next {
+    float: right;
+    right: 100px;
+    transition: 0.3s transform;
+}
+.pager .prev:hover {
+    transform: translateX(-8px);
+}
+.pager .next:hover {
+    transform: translateX(8px);
+}
+.pager .page-number {
+    visibility: hidden;
+}
