@@ -14,4 +14,9 @@
     <%- css("static/welkin.css") %>
     <%- css("static/global.css") %>
     <%- js("static/welkin.js") %>
+    <% if(is_home_first_page()) { %>
+        <style>
+            .pager {justify-content: flex-end;}
+        </style>
+    <% } %>
 </html>
