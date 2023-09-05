@@ -38,6 +38,7 @@ main {
     position: relative;
     display: flex;
     justify-content: space-between;
+    justify-content: flex-end;
     font-family: monospace, "Courier New", Courier;
     font-size: 24px;
     font-weight: bold;
@@ -45,12 +46,10 @@ main {
     padding-bottom: 60px;
 }
 .pager .prev {
-    float: left;
     padding: 0 120px;
     transition: 0.3s transform;
 }
 .pager .next {
-    float: right;
     padding: 0 120px;
     transition: 0.3s transform;
 }
@@ -59,7 +58,4 @@ main {
 }
 .pager .next:hover {
     transform: translateX(8px);
-}
-.pager .page-number {
-    visibility: hidden;
 }
