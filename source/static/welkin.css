@@ -58,3 +58,34 @@ main {
 .pager .next:hover {
     transform: translateX(8px);
 }
+
+
+
+.post-detail .post-content a {
+    text-decoration: underline;
+}
+.post-detail .post-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    padding: 24px 0;
+    letter-spacing: 0.02em;
+}
+.post-detail .post-info {
+    font-size: 12px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.post-detail .post-content {
+    font-size: 18px;
+}
+.post-detail .post-content p {
+    margin-bottom: 1.12em;
+    letter-spacing: 0.05em;
+}
+.post-detail .post-content h1,h2,h3,h4,h5,h6 {
+    margin: 16px 0;
+    padding-top: 16px;
+}
