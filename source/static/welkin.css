@@ -89,3 +89,30 @@ main {
     margin: 16px 0;
     padding-top: 16px;
 }
+
+
+/* highlight */
+.post-content code {
+    font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
+}
+
+.post-content p code {
+    color: #4c4c4c;
+    background-color: rgb(245, 242, 240);
+    padding: 6px;
+    border-radius: 3px;
+    margin: 0 0.125em;
+}
+
+.post-content pre {
+    color: #4c4c4c;
+    background-color: rgb(245, 242, 240);
+    line-height: 1.5;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 1.64em 0;
+}
+
+.hljs {
+    background: rgb(245, 242, 240);
+}
