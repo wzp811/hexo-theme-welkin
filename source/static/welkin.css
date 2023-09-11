@@ -79,6 +79,7 @@ main {
 }
 
 .post-detail .post-content {
+    padding: 0 24px;
     font-size: 18px;
 }
 .post-detail .post-content p {
@@ -115,4 +116,21 @@ main {
 
 .hljs {
     background: rgb(245, 242, 240);
+}
+
+/* fancybox */
+.markdown-section img {
+  max-width: 100%;
+  padding: 0.5em 0;
+  margin: auto;
+  display: block;
+}
+
+.caption {
+  color: #444;
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0.1em;
+  position: relative;
+  text-align: center;
 }
