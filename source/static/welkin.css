@@ -134,3 +134,7 @@ main {
   position: relative;
   text-align: center;
 }
+
+.fancybox img {
+    margin: auto;
+}
