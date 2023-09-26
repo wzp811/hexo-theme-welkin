@@ -119,12 +119,6 @@ main {
 }
 
 /* fancybox */
-.markdown-section img {
-  max-width: 100%;
-  padding: 0.5em 0;
-  margin: auto;
-  display: block;
-}
 
 .caption {
   color: #444;
@@ -135,6 +129,7 @@ main {
   text-align: center;
 }
 
-.fancybox img {
-    margin: auto;
+.img-container {
+    display: flex;
+    justify-content: center;
 }

@@ -1,8 +1,6 @@
 $(document).ready(function() {
   var alt = '';
   $('main img').each(function() {
-    console.log($(this).parent());
-    console.log($(this));
     if ($(this).parent().hasClass('fancybox')) return;
     
     if (!$(this).parent().hasClass('img-para')) $(this).parent().attr('class','img-para')
@@ -14,13 +12,38 @@ $(document).ready(function() {
 
   $(this).find('.img-para').each(function(){
     $(this).append('<span class="caption">' + alt + '</span>');
-    $(this).children('a, span').wrapAll('<div class="img-container"></div>');
+    var imgCnt = $(this).children('a').length;
+    var fatherWidth = $(this).width() * 0.8;
+    var resWidth = fatherWidth / imgCnt;
+    $(this).children('a').each(function() {
+      var img_detail = $(this).children('img');
+      console.log(img_detail);
+      var originWidth = img_detail.width();
+      if (originWidth > resWidth) {
+        var percent = resWidth / originWidth;
+        var height = img_detail.height() * percent;
+        console.log(img_detail);
+        console.log(percent);
+        console.log(img_detail.width());
+        console.log(resWidth);
+        console.log(img_detail.height());
+        console.log(height);
+        img_detail.css({
+          'width': resWidth,
+          'height': height
+        });
+      }
+    })
+    $(this).children('a').wrapAll('<div class="img-container"></div>');
   });
+
 });
-// $(document).ready(function() {
-//     $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery').fancybox({
-//         helpers : {
-//         title: { type: 'inside'}
-//         }
-//     });
-// });
+
+// 当前页面放大 而不是跳到另一个页面
+$(document).ready(function() {
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery').fancybox({
+        helpers : {
+        title: { type: 'inside'}
+        }
+    });
+});
