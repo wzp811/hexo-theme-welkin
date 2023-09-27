@@ -91,6 +91,14 @@ main {
     padding-top: 16px;
 }
 
+.post-detail .post-content blockquote {
+    color: #9a9a9a;
+    position: relative;
+    font-size: 0.96em;
+    padding-left: 18px;
+    border-left: 10px solid rgba(0, 0, 0, 0.05);
+}
+
 
 /* highlight */
 .post-content code {
@@ -132,4 +140,12 @@ main {
 .img-container {
     display: flex;
     justify-content: center;
+}
+.img-container a {
+    margin: 0 1px;
+}
+
+ul, ol {
+    padding-left: 35px;
+    margin-bottom: 1.12em;
 }

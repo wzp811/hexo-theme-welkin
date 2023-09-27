@@ -17,17 +17,10 @@ $(document).ready(function() {
     var resWidth = fatherWidth / imgCnt;
     $(this).children('a').each(function() {
       var img_detail = $(this).children('img');
-      console.log(img_detail);
       var originWidth = img_detail.width();
       if (originWidth > resWidth) {
         var percent = resWidth / originWidth;
         var height = img_detail.height() * percent;
-        console.log(img_detail);
-        console.log(percent);
-        console.log(img_detail.width());
-        console.log(resWidth);
-        console.log(img_detail.height());
-        console.log(height);
         img_detail.css({
           'width': resWidth,
           'height': height
