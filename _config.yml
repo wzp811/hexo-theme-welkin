@@ -13,11 +13,10 @@
 
 # main menu navigation
 menu:
-  categories: /categories
-  tags: /tags
-  about: /about
-  archives: /archives
-  search: /search
+  Home: /
+  Archives: /archives
+  Tags: /tags
+  About: /about
 
 banner: "/images/banner.jpg" # themes/reimu/source/images/banner.jpg
 # You can also write it in the form of the following url

@@ -6,8 +6,13 @@
 }
 a {
     text-decoration: none;
-    background-color: transparent;
     transition: color 0.3s;
+}
+a:hover {
+    color: blue;
+}
+a:active, a:visited {
+    color: black;
 }
 .main-container {
     width: 100%;
@@ -34,9 +39,7 @@ a {
     height: 80px;
 }
 .header .header-main .header-title {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1.2;
+    font-size: 40px;
     padding-left: 20px;
 }
 
